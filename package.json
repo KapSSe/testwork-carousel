@@ -1,0 +1,19 @@
+{
+  "name": "gulp-template",
+  "version": "1.0.0",
+  "description": "A gulp-based template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KapSSe/gulp-template.git"
+  },
+  "author": "KapSSe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KapSSe/gulp-template/issues"
+  },
+  "homepage": "https://github.com/KapSSe/gulp-template#readme"
+}
