@@ -1,6 +1,29 @@
+h1 {
+  text-align: center;
+  color: dodgerblue;
+  font-size: 34px;
+  font-family: Helvetica, sans-serif; }
+
 body {
-  margin: 0 auto;
-  color: green;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  font-family: Helvetica, sans-serif;
+  background: black; }
+
+img {
+  display: block;
+  max-width: 980px;
+  margin: 0 auto; }
+
+p {
+  font-size: 30px;
+  text-align: center;
+  color: white; }
+
+ul li {
+  list-style: none;
+  text-align: center; }
+
+li {
+  font-size: 18px;
+  color: purple; }
+  li span {
+    color: dodgerblue; }
