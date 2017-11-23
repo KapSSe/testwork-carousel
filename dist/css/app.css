@@ -1,0 +1,6 @@
+body {
+  margin: 0 auto;
+  color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
