@@ -1,1 +1,4 @@
-console.log('welcome to project');
+
+
+let a = "hello";
+console.log(a);
