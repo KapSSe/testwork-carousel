@@ -4,12 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/app.css">
   <title>A carousel for 8WaysMedia</title>
 </head>
 <body>
-      <h1>Wazuup!</h1>
+    <div class="wrapper">
+      <div class="wrapper__slides">
+        <ul class="slider-tab">
+          <li class="slider-tab-item"><button data-target="1" class="btn-tab">Elegance</button></li>
+          <li class="slider-tab-item"><button data-target="2" class="btn-tab">Creation</button></li>
+          <li class="slider-tab-item"><button data-target="3" class="btn-tab">Family office</button></li>
+          <li class="slider-tab-item"><button data-target="4" class="btn-tab">Experience</button></li>
+        </ul>
+        <ul class="slider-view">
+          <li class="slider-view-item" data-show="1" data-visible="true">
+            <img src="img/1.jpg" alt="space">
+            <div>
+                <h2>Elegance</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere accumsan venenatis. Maecenas mauris lacus, efficitur ultricies pretium nec, cursus ut risus. Nullam felis augue, varius eget luctus in, finibus non enim. Nunc molestie felis risus, vitae volutpat magna lobortis ac.<br> 
+                    Nullam molestie vestibulum tortor, sed vulputate nisl commodo eget. Fusce et euismod orci. Sed imperdiet lectus nunc, efficitur lobortis orci sollicitudin et. </p>
+                <button>Read more</button>
+            </div>
+          </li>
+          <li class="slider-view-item" data-show="2" data-visible="false">
+              <img src="img/2.jpg" alt="space">
+            <div>
+                <h2>Creation</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere accumsan venenatis. Maecenas mauris lacus, efficitur ultricies pretium nec, cursus ut risus. Nullam felis augue, varius eget luctus in, finibus non enim. Nunc molestie felis risus, vitae volutpat magna lobortis ac.<br> 
+                    Nullam molestie vestibulum tortor, sed vulputate nisl commodo eget. Fusce et euismod orci. Sed imperdiet lectus nunc, efficitur lobortis orci sollicitudin et. </p>
+                <button>Read more</button>
+            </div>
+          </li>
+          <li class="slider-view-item" data-show="3" data-visible="false">
+              <img src="img/3.jpg" alt="space">
+            <div>
+                <h2>Family office</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere accumsan venenatis. Maecenas mauris lacus, efficitur ultricies pretium nec, cursus ut risus. Nullam felis augue, varius eget luctus in, finibus non enim. Nunc molestie felis risus, vitae volutpat magna lobortis ac.<br> 
+                    Nullam molestie vestibulum tortor, sed vulputate nisl commodo eget. Fusce et euismod orci. Sed imperdiet lectus nunc, efficitur lobortis orci sollicitudin et. </p>
+                <button>Read more</button>
+            </div>
+          </li>
+          <li class="slider-view-item" data-show="4" data-visible="false">
+              <img src="img/5.jpg" alt="space">
+            <div>
+                <h2>Experience</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere accumsan venenatis. Maecenas mauris lacus, efficitur ultricies pretium nec, cursus ut risus. Nullam felis augue, varius eget luctus in, finibus non enim. Nunc molestie felis risus, vitae volutpat magna lobortis ac.<br> 
+                    Nullam molestie vestibulum tortor, sed vulputate nisl commodo eget. Fusce et euismod orci. Sed imperdiet lectus nunc, efficitur lobortis orci sollicitudin et. </p>
+                <button>Read more</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="wrapper__dragger">
+      </div>
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>
