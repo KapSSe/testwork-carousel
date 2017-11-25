@@ -67,6 +67,7 @@ menu, ol, ul {
     display: flex;
     & img{
         display: block;
+        object-fit: cover;
         max-width: 705px;
         max-height: 860px;
         width:50%;

@@ -72,6 +72,8 @@ menu, ol, ul {
   display: flex; }
   .slider-view-item img {
     display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
     max-width: 705px;
     max-height: 860px;
     width: 50%; }
