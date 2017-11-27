@@ -10,7 +10,6 @@ menu, ol, ul {
     padding: 0px;
 }
 
-
 //Tab carousel anim
 
 [data-visible="false"]{
@@ -29,12 +28,12 @@ menu, ol, ul {
 
 [data-scale="false"] {
     transition: 1s;
-    transform: scale(1.2);
+    transform: scale(0.9);
 }
 
 [data-scale="true"] {
     transition: 1s;
-    transform: scale(0.9);
+    transform: scale(1.2);
     
 }
 
@@ -67,14 +66,14 @@ menu, ol, ul {
 // }
 
 .moveRight{
-    transition: transform 2s linear;
+    transition: transform 3s linear;
     transform: translateZ(0);
     backface-visibility: hidden;
     transform: translate3d(-100%,0,0);
 }
 
 .moveLeft{
-    transition: transform 2s linear;
+    transition: transform 3s linear;
     transform: translateZ(0);
     backface-visibility: hidden;
     transform: translate3d(0,0,0);
@@ -190,7 +189,7 @@ menu, ol, ul {
     display: flex;
     justify-content: space-between;
     max-width: 1395px;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 192px;
     & h2{
         font-family: 'Playfair Display', serif;
@@ -206,6 +205,7 @@ menu, ol, ul {
         letter-spacing: 1px;
     }
 }
+
 
 .frame{
     max-width: 440px;
@@ -228,6 +228,7 @@ menu, ol, ul {
     transform: translate3d(0,0,0);
     white-space: nowrap;
     font-size: 0;
+    
     &-item{
         display: inline-block;
         vertical-align: top;

@@ -1,5 +1,14 @@
 document.addEventListener("DOMContentLoaded", function(){
 
+    document.getElementById("drag-image").addEventListener("dragstart", function(e) {
+        console.log(e)
+        var crt = this.cloneNode(true);
+        crt.style.backgroundColor = "red";
+        crt.style.display = "none"; /* or visibility: hidden, or any of the above */
+        document.body.appendChild(crt);
+        e.dataTransfer.setDragImage(crt, 0, 0);
+    }, false);
+
     class TabHandler {
         constructor(){
             this.tabCollection = this.getTabCollection();
@@ -98,7 +107,7 @@ const tabhandler = new TabHandler();
                     if(currentDataIndex != undefined ){
                         let i = currentDataIndex - 1;
                         e.target.dataset.scale = 'false';
-                        //this.headerCollection[i].dataset.shrink = "false";
+                       // this.headerCollection[i].dataset.shrink = "false";
                         //this.textCollection[i].dataset.shrink  = "false";
                     }
                 })
@@ -132,6 +141,7 @@ const tabhandler = new TabHandler();
            for (let target of this.dragCatchTarget){
                 target.addEventListener('mouseover',(e) => {
                         e.target.addEventListener('dragstart',(e) => {
+                            e.dataTransfer.setDragImage(e.target, -99999, -99999);
                             let carousel = this.dragContainer;
                             this.iteratorStart = window.event.pageX;
                     })
