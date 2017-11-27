@@ -29,42 +29,42 @@ menu, ol, ul {
 
 [data-scale="false"] {
     transition: 1s;
-    transform: scale(1);
+    transform: scale(1.2);
 }
 
 [data-scale="true"] {
     transition: 1s;
-    transform: scale(1.1);
+    transform: scale(0.9);
     
 }
 
-h3[data-shrink="true"]{
-    transform-origin: top left;
-    transition-timing-function: linear;
-    transition: 1.5s;
-    transform: scale(0.85);
-}
+// h3[data-shrink="true"]{
+//     transform-origin: top left;
+//     transition-timing-function: linear;
+//     transition: 1.5s;
+//     transform: scale(0.85);
+// }
 
-h3[data-shrink="false"]{
-    transform-origin: top left;
-    transition-timing-function: linear;
-    transition: 1.5s;
-}
+// h3[data-shrink="false"]{
+//     transform-origin: top left;
+//     transition-timing-function: linear;
+//     transition: 1.5s;
+// }
 
-p[data-shrink="true"]{
-    transform-origin: top left;
-    transition-timing-function: linear;
-    white-space: nowrap;
-    transition: 1.5s;
-    transform: scale(0.85);
-}
+// p[data-shrink="true"]{
+//     transform-origin: top left;
+//     transition-timing-function: linear;
+//     white-space: nowrap;
+//     transition: 1.5s;
+//     transform: scale(0.85);
+// }
 
-p[data-shrink="false"]{
-    transform-origin: top left;
-    transition-timing-function: linear;
-    white-space: nowrap;
-    transition: 1.5s;
-}
+// p[data-shrink="false"]{
+//     transform-origin: top left;
+//     transition-timing-function: linear;
+//     white-space: nowrap;
+//     transition: 1.5s;
+// }
 
 .moveRight{
     transition: transform 2s linear;

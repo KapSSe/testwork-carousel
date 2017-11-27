@@ -98,8 +98,8 @@ const tabhandler = new TabHandler();
                     if(currentDataIndex != undefined ){
                         let i = currentDataIndex - 1;
                         e.target.dataset.scale = 'false';
-                        this.headerCollection[i].dataset.shrink = "false";
-                        this.textCollection[i].dataset.shrink  = "false";
+                        //this.headerCollection[i].dataset.shrink = "false";
+                        //this.textCollection[i].dataset.shrink  = "false";
                     }
                 })
             )
