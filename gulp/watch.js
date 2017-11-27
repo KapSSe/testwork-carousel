@@ -6,6 +6,7 @@ gulp.task('default', function () {
         'copy',
         'minifycss',
         'minifyimg',
+        'minifyjs',
         'sass',
         'serve',
         'copy:watch',

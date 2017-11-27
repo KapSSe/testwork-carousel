@@ -164,8 +164,4 @@ const tabhandler = new TabHandler();
     })()
 });
 
-// console.log('start');
-// e = e || window.event;
-// let x = e.pageX
-// console.log(x);
 

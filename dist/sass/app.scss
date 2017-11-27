@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:300,400,500,700');
 
+//Global
+
+body{
+    overflow-x: hidden;
+}
+
 menu, ol, ul {
     padding: 0px;
 }
@@ -60,8 +66,6 @@ p[data-shrink="false"]{
     transition: 1.5s;
 }
 
-
-
 .moveRight{
     transition: transform 2s linear;
     transform: translateZ(0);
@@ -76,14 +80,7 @@ p[data-shrink="false"]{
     transform: translate3d(0,0,0);
 }
 
-//dragger 
-// [data-dragvisible="false"]{
-//     opacity: 0;
-// }
-
-// [data-dragvisible="true"]{
-//     opacity: 1;
-// }
+//Styling
 
 .wrapper {
     position: relative;
@@ -93,6 +90,7 @@ p[data-shrink="false"]{
 }
 
 .wrapper__dragger{
+    background: white;
     backface-visibility: hidden;
     overflow: hidden;
     max-width: 1350px;
@@ -123,8 +121,14 @@ p[data-shrink="false"]{
 .btn-tab{
     padding: 25px;
     border: none;
-    outline: none;
+    background: #fff;
+    outline-color: #F8F9FA;
     &:focus {
+        color: black;
+        background-color: #F8F9FA;
+    }
+    &:active {
+        color: black;
         background-color: #F8F9FA;
     }
 }
@@ -251,6 +255,11 @@ p[data-shrink="false"]{
 }
 
 @media screen and (max-width: 1200px){
+  
+    .dragger-heading{
+        margin-top: 0;
+        margin-left: 0;
+    }
     .slider-view-item{
         flex-direction: column;
         & img{
@@ -288,12 +297,17 @@ p[data-shrink="false"]{
     }
 }
 
-@media (max-width: 767px) {
-    
+@media screen and (max-width: 767px) {
+
     .slider-tab{
-        padding: 0px;
         top:50px;
+        left: 0;
+        transform: translateX(0);
         max-width: 100%;
+        width: 100%;
+        &-item button{
+            font-size: 16px;
+        }
     }
 
     .btn-tab{
@@ -313,6 +327,12 @@ p[data-shrink="false"]{
         & div{
             width: 100%;
             padding: 50px 50px;
+
+            & button{
+                display: block;
+                margin: 0 auto;
+            }
         }
+
     }
 }
