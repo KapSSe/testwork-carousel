@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function(){
             target.dataset.visible = "true";
             return new TabHandler();
         }
-
     }
 
 const tabhandler = new TabHandler();
@@ -71,11 +70,18 @@ const tabhandler = new TabHandler();
         getTextCollection() {
             return document.querySelectorAll('.dragger-text')
         }
+        
         animate(currentHovered, currentDataIndex) {
             currentHovered.dataset.scale = 'true';
             let i = currentDataIndex - 1;
             this.headerCollection[i].dataset.shrink = "true";
             this.textCollection[i].dataset.shrink = "true";
+            function initScaler (){
+                setTimeout (function () {
+                    this.animEnded = true;
+                    }, 1700);
+            }
+            return initScaler();
             
         } 
         catchEvents(){
@@ -154,14 +160,13 @@ const tabhandler = new TabHandler();
             }
        }
     }
-    (() => {
-        console.log(window.width);
-            let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-            let breakpoint = 1200;
-            if (w > breakpoint){
-                let draggercarousel = new DraggerCarousel();
-            }
-    })()
+     (() => {
+             let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+             let breakpoint = 1200;
+             if (w > breakpoint){
+                 let draggercarousel = new DraggerCarousel();
+             }
+     })()
 });
 
 
