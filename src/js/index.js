@@ -137,7 +137,7 @@ const tabhandler = new TabHandler();
                         if(this.iteratorStart > this.iteratorEnd && e.target.dataset.image < 3){
                             for (let slides of this.dragItems){
                                 //slides.dataset.dragvisible = 'true';
-                                this.dragContainer.style.transform = "translate3d(-100%,0,0)"
+                                this.dragContainer.style.transform = "translateX(-102%)"
                                 //this.dragContainer.classList.add('moveRight');
                                 
                             }
@@ -145,7 +145,7 @@ const tabhandler = new TabHandler();
                         if(this.iteratorStart < this.iteratorEnd && e.target.dataset.image > 3){
                             for (let slides of this.dragItems){
                                 //slides.dataset.dragvisible = 'true';
-                                this.dragContainer.style.transform = "translate3d(0,0,0)"
+                                this.dragContainer.style.transform = "translateX(0%)"
                                 //this.dragContainer.classList.add('moveLeft');
                             }
                         }
@@ -154,8 +154,14 @@ const tabhandler = new TabHandler();
             }
        }
     }
-
-    let draggercarousel = new DraggerCarousel();
+    (() => {
+        console.log(window.width);
+            let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            let breakpoint = 1200;
+            if (w > breakpoint){
+                let draggercarousel = new DraggerCarousel();
+            }
+    })()
 });
 
 // console.log('start');
