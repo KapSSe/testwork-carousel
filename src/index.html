@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/app.css">
   <title>A carousel for 8WaysMedia</title>
 </head>
@@ -23,7 +24,7 @@
                 <h2>Elegance</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere accumsan venenatis. Maecenas mauris lacus, efficitur ultricies pretium nec, cursus ut risus. Nullam felis augue, varius eget luctus in, finibus non enim. Nunc molestie felis risus, vitae volutpat magna lobortis ac.<br> 
                     Nullam molestie vestibulum tortor, sed vulputate nisl commodo eget. Fusce et euismod orci. Sed imperdiet lectus nunc, efficitur lobortis orci sollicitudin et. </p>
-                <button>Read more</button>
+                <button>Read more <i class="fa fa-angle-right" aria-hidden="true"></i></button>
             </div>
           </li>
           <li class="slider-view-item" data-show="2" data-visible="false">
@@ -32,7 +33,7 @@
                 <h2>Creation</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere accumsan venenatis. Maecenas mauris lacus, efficitur ultricies pretium nec, cursus ut risus. Nullam felis augue, varius eget luctus in, finibus non enim. Nunc molestie felis risus, vitae volutpat magna lobortis ac.<br> 
                     Nullam molestie vestibulum tortor, sed vulputate nisl commodo eget. Fusce et euismod orci. Sed imperdiet lectus nunc, efficitur lobortis orci sollicitudin et. </p>
-                <button>Read more</button>
+                <button>Read more <i class="fa fa-angle-right" aria-hidden="true"></i></button>
             </div>
           </li>
           <li class="slider-view-item" data-show="3" data-visible="false">
@@ -41,7 +42,7 @@
                 <h2>Family office</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere accumsan venenatis. Maecenas mauris lacus, efficitur ultricies pretium nec, cursus ut risus. Nullam felis augue, varius eget luctus in, finibus non enim. Nunc molestie felis risus, vitae volutpat magna lobortis ac.<br> 
                     Nullam molestie vestibulum tortor, sed vulputate nisl commodo eget. Fusce et euismod orci. Sed imperdiet lectus nunc, efficitur lobortis orci sollicitudin et. </p>
-                <button>Read more</button>
+                <button>Read more <i class="fa fa-angle-right" aria-hidden="true"></i></button>
             </div>
           </li>
           <li class="slider-view-item" data-show="4" data-visible="false">
@@ -50,15 +51,70 @@
                 <h2>Experience</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere accumsan venenatis. Maecenas mauris lacus, efficitur ultricies pretium nec, cursus ut risus. Nullam felis augue, varius eget luctus in, finibus non enim. Nunc molestie felis risus, vitae volutpat magna lobortis ac.<br> 
                     Nullam molestie vestibulum tortor, sed vulputate nisl commodo eget. Fusce et euismod orci. Sed imperdiet lectus nunc, efficitur lobortis orci sollicitudin et. </p>
-                <button>Read more</button>
+                <button>Read more <i class="fa fa-x2 fa-angle-right" aria-hidden="true"></i></button>
             </div>
           </li>
         </ul>
       </div>
-      <div class="wrapper__dragger">
+    </div>
+    <div class="wrapper__dragger">
+      <div class="dragger-heading">
+          <h2 class="creations">Our creations</h2>
+          <button>see all <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+      </div>
+      <div class="carousel">
+        <ul class="dragger-carousel" style="backface-visibility: hidden; transition:2s; perspective: 1000; transform: translate3d(0,0,0); ">
+          <li class="dragger-carousel-item" data-drag="item">
+            <div class="frame">
+              <img class="img-scalable" src="img/2.jpg" alt="space" data-image="1" data-scale="false">
+            </div>
+            <h3 class="text-scalable dragger-header" data-text="1" data-shrink="false">Lake annecy</h3>
+            <p class="text-scalable dragger-text" data-text="1" data-shrink="false">Aliquam erat volutpat. <br>Integer finibus augue 
+              in neque eleifend,<br> vitae auctor augue blandit.</p>
+          </li>
+          <li class="dragger-carousel-item" data-drag="item">
+            <div class="frame">
+              <img class="img-scalable" src="img/3.jpg" alt="space" data-image="2" data-scale="false">
+            </div>
+            <h3 class="text-scalable dragger-header" data-text="2" data-shrink="false">Space agency</h3>
+            <p class="text-scalable dragger-text" data-text="2" data-shrink="false">Nunc id libero lobortis,<br> bibendum velit eget, 
+                placerat metus.</p>
+          </li>
+          <li class="dragger-carousel-item" data-drag="item">
+            <div class="frame">
+              <img class="img-scalable" src="img/4.jpg" alt="space" data-image="3" data-scale="false">
+            </div>
+            <h3 class="text-scalable dragger-header" data-text="3" data-shrink="false">Lak du budget</h3>
+            <p class="text-scalable dragger-text" data-text="3" data-shrink="false">Aliquam erat volutpat.<br> Integer finibus augue 
+              in neque eleifend,<br> vitae auctor augue blandit.</p>
+          </li>
+          <li class="dragger-carousel-item" data-drag="item">
+            <div class="frame">
+              <img class="img-scalable" src="img/5.jpg" alt="space" data-image="4" data-scale="false">
+            </div>
+            <h3 class="text-scalable dragger-header" data-text="4" data-shrink="false">Lak du budget</h3>
+            <p class="text-scalable dragger-text" data-text="4" data-shrink="false">Aliquam erat volutpat.<br> Integer finibus augue 
+              in neque eleifend,<br> vitae auctor augue blandit.</p>
+          </li>
+          <li class="dragger-carousel-item" data-drag="item">
+            <div class="frame">
+              <img class="img-scalable" src="img/6.jpg" alt="space" data-image="5" data-scale="false">
+            </div>
+            <h3 class="text-scalable dragger-header" data-text="5" data-shrink="false">Lak du budget</h3>
+            <p class="text-scalable dragger-text" data-text="5" data-shrink="false">Aliquam erat volutpat.<br> Integer finibus augue 
+              in neque eleifend,<br> vitae auctor augue blandit.</p>
+          </li>
+          <li class="dragger-carousel-item" data-drag="item">
+            <div class="frame">
+              <img class="img-scalable" src="img/7.jpg" alt="space" data-image="6" data-scale="false">
+            </div>
+            <h3 class="text-scalable dragger-header" data-text="6" data-shrink="false">Lak du budget</h3>
+            <p class="text-scalable dragger-text" data-text="6" data-shrink="false">Aliquam erat volutpat.<br> Integer finibus augue 
+              in neque eleifend,<br> vitae auctor augue blandit.</p>
+          </li>
+        </ul>
       </div>
     </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>
